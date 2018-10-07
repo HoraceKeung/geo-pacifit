@@ -48,7 +48,7 @@ module.exports = {
 							extractor: TailwindExtractor,
 							extensions: ['vue']
 						}],
-						whitelist: whitelister(['./assets/css/*.css', './node_modules//vue-backtotop/src/styles.css'])
+						whitelist: whitelister(['./assets/css/*.css', './node_modules/vue-backtotop/src/styles.css'])
 					})
 				)
 			}
