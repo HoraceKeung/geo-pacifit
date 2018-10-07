@@ -1,9 +1,9 @@
 <template>
 	<back-to-top>
-		<div class="btn w-12 h-12 flex" @mouseover="hover = true" @mouseleave="hover = false">
+		<button class="btn w-12 h-12 flex" @mouseover="hover = true" @mouseleave="hover = false">
 			<img v-show="!hover" class="w-4 m-auto" src="~/assets/img/back-to-top.png">
 			<img v-show="hover" class="w-4 m-auto" src="~/assets/img/back-to-top-white.png">
-		</div>
+		</button>
 	</back-to-top>
 </template>
 
