@@ -1,5 +1,5 @@
 <template>
-    <div id="home" class="h-screen bg-hero bg-cover text-white flex flex-col">
+    <div class="h-screen bg-hero bg-cover text-white flex flex-col">
 		<div class="relative"><div class="absolute w-full"><div class="container">
 			<div class="flex py-4">
 				<div><img class="h-24" src="~assets/img/logo.png" alt="logo"></div>
