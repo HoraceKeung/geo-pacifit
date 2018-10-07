@@ -27,7 +27,7 @@
 				<div class="container bg-white py-8 md:py-0"><div class="min-h-64 flex flex-wrap -mx-2">
 					<div v-for="o in offices" :key="o.img" class="md:w-1/2 px-2 flex">
 						<div class="flex m-auto">
-							<div class="my-auto mr-4"><img :src="`/img/${o.img}.png`" :alt="o.img"></div>
+							<div class="my-auto mr-4"><img :src="`${baseImgUrl+o.img}.png`" :alt="o.img"></div>
 							<div>
 								<p>{{o.address}}</p>
 								<p>{{o.phone}}</p>

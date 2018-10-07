@@ -7,7 +7,7 @@
 		</div></div>
 		<div v-for="(p,index) in products" :key="p.name" :class="[{'md:flex-row-reverse':index%2!==0},'flex flex-wrap']">
 			<div class="w-full md:w-1/2">
-				<div class="h-full min-h-64 bg-cover bg-center" :style="`background-image: url(/img/${p.name}.jpg);`"></div>
+				<div class="h-full min-h-64 bg-cover bg-center" :style="`background-image: url(${baseImgUrl+p.name}.jpg);`"></div>
 			</div>
 			<div class="w-full md:w-1/2"><div class="h-full p-16 flex">
 				<div :class="'m-auto '+(index%2===0?'xl:pr-48':'xl:pl-48')">

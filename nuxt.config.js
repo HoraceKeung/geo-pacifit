@@ -18,7 +18,7 @@ module.exports = {
 			{ hid: 'description', name: 'description', content: 'The most reliable metal supplier in the world' }
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+			{ rel: 'icon', type: 'image/x-icon', href: (process.env.DEPLOY_ENV === 'GH_PAGES' ? '/geo-pacifit' : '') + '/favicon.ico'}
 		]
 	},
 	loading: false,
@@ -57,5 +57,8 @@ module.exports = {
 	plugins: ['~/plugins/main.js'],
 	router: {
 		base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/geo-pacifit/' : ''
+	},
+	env: {
+		baseImgUrl: process.env.DEPLOY_ENV === 'GH_PAGES' ? 'https://horacekeung.github.io/geo-pacifit/img/' : '/img/'
 	}
 }
