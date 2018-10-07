@@ -9,7 +9,7 @@
 /** ------------------------------------------------------------
 ##  CUSTOM CLASSES
 --------------------------------------------------------- */
-@import 'vue-backtotop/src/styles.css'
+@import 'vue-backtotop/src/styles.css';
 @font-face {
     font-family: my-font;
     src: url(~assets/font/Helvetica_Bold.ttf);

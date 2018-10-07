@@ -1,6 +1,6 @@
 <template>
 	<div id="contact">
-		<div class="bg-black py-16 min-h-176 sm:min-h-160 md:min-h-128"><div class="container">
+		<div class="bg-black py-16 min-h-200 sm:min-h-160 md:min-h-128"><div class="container">
 			<div class="flex flex-wrap -mx-4">
 				<div class="md:w-1/2 px-4 mb-6">
 					<h2 class="text-gold mb-4">Thanks for dropping us a line.</h2>
