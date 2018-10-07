@@ -47,7 +47,8 @@ module.exports = {
 							extractor: TailwindExtractor,
 							extensions: ['vue']
 						}],
-						whitelist: ['html', 'body', 'nuxt-progress', 'vue-back-to-top']
+						whitelist: ['html', 'body', 'nuxt-progress'],
+						whitelistPatterns: [/back-to-top/]
 					})
 				)
 			}
