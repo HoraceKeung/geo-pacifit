@@ -4,7 +4,6 @@
 		<about/>
 		<products/>
 		<contact/>
-		<back-top/>
 	</section>
 </template>
 
