@@ -54,5 +54,8 @@ module.exports = {
 		}
 	},
 	css: ['@/assets/css/global.css'],
-	plugins: ['~/plugins/main.js']
+	plugins: ['~/plugins/main.js'],
+	router: {
+		base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/geo-pacifit/' : ''
+	}
 }
