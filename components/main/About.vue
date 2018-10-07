@@ -17,7 +17,7 @@
 				<h2 class="text-center mb-16">Why JMAX?</h2>
 				<div class="flex flex-wrap -mx-2">
 					<div v-for="p in pros" :key="p" class="w-full sm:w-1/2 md:w-1/4 px-2 text-center mb-6">
-						<img :src="`/img/${p}.png`" :alt="p">
+						<img :src="`./img/${p}.png`" :alt="p">
 						<p class="capitalize">{{p.replace(/-/g,' ')}}</p>
 					</div>
 				</div>
