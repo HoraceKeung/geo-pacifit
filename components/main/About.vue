@@ -4,7 +4,7 @@
 			<h2 class="text-gold mb-4">About Us</h2>
 			<p class="mb-4">Jmax metals trading is one of the large metals supplier in China, supplying tons of metal material to the world.
 				Our UK office have been established since 2015 and servicing all around the Europe.</p>
-			<img class="mb-8" src="~assets/img/about.jpg" alt="about">
+			<img class="mb-8 w-full" src="~assets/img/about.jpg" alt="about">
 			<p class="mb-4">Jmax metals trading was founded in March 2001.
 				It is located in one of the biggest industrial Cluster Area, which is in the Guangdong County.
 				Our company covers an area of 900mu and makes a total investment of RMB 5.1 billion. 

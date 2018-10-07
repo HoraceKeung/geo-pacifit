@@ -7,9 +7,9 @@
 		</div></div>
 		<div v-for="(p,index) in products" :key="p.name" :class="[{'md:flex-row-reverse':index%2!==0},'flex flex-wrap']">
 			<div class="w-full md:w-1/2">
-				<div class="h-full min-h-64 bg-cover bg-center" :style="`background-image: url(${baseImgUrl+p.name}.jpg);`"></div>
+				<div class="bg-cover bg-center" :style="`background-image: url(${baseImgUrl+p.name}.jpg);padding-top: 56.25%;`"></div>
 			</div>
-			<div class="w-full md:w-1/2"><div class="h-full p-16 flex">
+			<div class="w-full md:w-1/2"><div class="h-full p-16 md:py-0 flex">
 				<div :class="'m-auto '+(index%2===0?'xl:pr-48':'xl:pl-48')">
 					<h2 class="capitalize text-gold">{{p.name.replace(/-/g,' ')}}</h2>
 					<div class="bg-gold h-1 w-10 mt-2 mb-4"></div>
@@ -17,9 +17,11 @@
 				</div>
 			</div></div>
 		</div>
-		<div class="bg-goldblock text-center"><div class="container">
-			<h2>Just What You Need, When You Need It.</h2>
-			<p class="italic text-2xl">Your Navigator in the World of Trade.</p>
+		<div class="bg-goldblock h-80"><div class="container h-full flex">
+			<div class="m-auto text-center">
+				<h2>Just What You Need, When You Need It.</h2>
+				<p class="italic text-2xl">Your Navigator in the World of Trade.</p>
+			</div>
 		</div></div>
 	</div>
 </template>

@@ -449,6 +449,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '80': '20rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -609,6 +610,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '48': '12rem'
   },
 
   /*

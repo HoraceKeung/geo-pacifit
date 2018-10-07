@@ -11,7 +11,7 @@
 		</div></div></div>
 		<div class="m-auto text-center">
 			<h1 class="mb-1">We are Committed</h1>
-			<p class="text-lg">The most reliable metal supplier in the world</p>
+			<p class="text-3xl">The most reliable metal supplier in the world</p>
 		</div>
     </div>
 </template>
