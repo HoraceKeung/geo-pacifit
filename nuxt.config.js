@@ -1,6 +1,7 @@
 import path from 'path'
 import PurgecssPlugin from 'purgecss-webpack-plugin'
 import glob from 'glob-all'
+import whitelister from 'purgecss-whitelister'
 
 class TailwindExtractor {
 	static extract(content) {
@@ -47,7 +48,7 @@ module.exports = {
 							extractor: TailwindExtractor,
 							extensions: ['vue']
 						}],
-						whitelist: ['html', 'body', 'nuxt-progress']
+						whitelist: whitelister(['./assets/css/*.css', './node_modules//vue-backtotop/src/styles.css'])
 					})
 				)
 			}
