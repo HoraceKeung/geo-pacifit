@@ -9,13 +9,13 @@
 			<div class="w-full md:w-1/2">
 				<div class="bg-cover bg-center" :style="`background-image: url(${baseImgUrl+p.name}.jpg);padding-top: 56.25%;`"></div>
 			</div>
-			<div class="w-full md:w-1/2"><div class="h-full p-16 md:py-0 flex">
-				<div :class="'m-auto '+(index%2===0?'xl:pr-48':'xl:pl-48')">
+			<div class="w-full md:w-1/2 flex py-16 md:py-0">
+				<div :class="'my-auto px-4 '+(index%2===0?'xl:pr-48 xl:pl-8':'xl:pl-48 xl:pr-8')">
 					<h2 class="capitalize text-gold">{{p.name.replace(/-/g,' ')}}</h2>
 					<div class="bg-gold h-1 w-10 mt-2 mb-4"></div>
 					<p>{{p.desc}}</p>
 				</div>
-			</div></div>
+			</div>
 		</div>
 		<div class="bg-goldblock h-80"><div class="container h-full flex">
 			<div class="m-auto text-center">
