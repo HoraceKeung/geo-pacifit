@@ -25,7 +25,7 @@
 			<div class="absolute w-full px-4" style="bottom: 4rem;">
 				<quote/>
 				<div class="flex"><div class="mx-auto">
-					<div class="max-w-lg min-h-64 bg-white flex flex-wrap -mx-2">
+					<div class="min-h-64 bg-white lg:px-16 flex flex-wrap -mx-2">
 						<div v-for="(o,index) in offices" :key="o.img" :class="[{'pt-6 md:pt-0':index===0},'md:w-1/2 px-2 flex']">
 							<div class="flex m-auto px-4">
 								<div class="my-auto mx-4 md:ml-0"><img :src="`${baseImgUrl+o.img}.png`" :alt="o.img"></div>
