@@ -61,7 +61,11 @@ p {
 }
 .bg-goldblock {
 	background-image: url(~assets/img/bg-goldblock.jpg);
-	@apply bg-cover py-16 text-white
+	@apply bg-cover bg-center py-16 text-white
+}
+.bg-contact {
+	background-image: url(~assets/img/bg-contact.jpg);
+	@apply bg-cover bg-center
 }
 .form-control {
 	@apply bg-transparent text-white border-b border-gold w-full py-2 mb-4 outline-none
