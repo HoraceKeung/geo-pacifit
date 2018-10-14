@@ -14,7 +14,7 @@
 					<h2 class="capitalize text-gold">{{p.name.replace(/-/g,' ')}}</h2>
 					<div class="bg-gold h-1 w-10 mt-2 mb-4"></div>
 					<p>{{p.desc}}</p>
-					<button v-if="p.table" type="button" class="btn mt-4" @click="reading=p.table">Read more</button>
+					<button v-if="p.table" type="button" class="btn mt-4" @click="reading=p.table;$modal.show('table')">Read more</button>
 				</div>
 			</div>
 		</div>
@@ -25,12 +25,13 @@
 			</div>
 		</div></div>
 		<!-- START Modal -->
-		<div v-if="reading" class="fixed pin bg-black-90 p-10 flex" style="z-index: 1001;" @click="reading=null">
-			<div class="bg-white shadow-lg p-4 m-auto">
+		<modal name="table" width="90%" height="auto">
+			<div class="bg-gold p-2"><h2 class="text-white">Specificaton</h2></div>
+			<div v-if="reading" class="bg-white p-2 w-full">
 				<table class="w-full">
 					<thead class="bg-grey-light">
 						<tr>
-							<th v-for="h in reading.head" :key="h" class="border border-black whitespace-no-wrap p-4">{{h}}</th>
+							<th v-for="h in reading.head" :key="h" class="border border-black text-center whitespace-no-wrap p-4">{{h}}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -40,7 +41,7 @@
 					</tbody>
 				</table>
 			</div>
-		</div>
+		</modal>
 		<!-- END Modal -->
 	</div>
 </template>

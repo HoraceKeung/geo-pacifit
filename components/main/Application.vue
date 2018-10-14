@@ -4,12 +4,12 @@
 		<div class="container text-center py-16">
 			<h2 class="text-gold mb-16">Application</h2>
 			<div class="md:flex flex-wrap">
-				<div v-for="a in applications" :key="a.name" :id="a.name" class="md:w-1/3">
+				<div v-for="a in applications" :key="a.name" :id="a.name" class="md:w-1/2 lg:w-1/3">
 					<div class="overflow-hidden relative trigger">
 						<img class="w-full block" :src="`${baseImgUrl+a.name}.jpg`">
 						<div class="absolute pin bg-transparent hover:bg-gold-70 flex">
 							<div class="m-auto text-center text-white">
-								<p class="capitalize text-xl">{{a.name.replace(/-/g,' ')}}</p>
+								<p class="capitalize text-3xl">{{a.name.replace(/-/g,' ')}}</p>
 								<p v-if="a.text" class="mt-2">{{a.text}}</p>
 							</div>
 						</div>
