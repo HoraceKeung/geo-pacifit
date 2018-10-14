@@ -19,7 +19,7 @@
 <script>
 export default {
 	data: () => ({
-		links: ['about', 'products']
+		links: ['about', 'products', 'application']
 	})
 }
 </script>

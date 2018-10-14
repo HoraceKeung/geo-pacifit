@@ -3,6 +3,7 @@
 		<hero/>
 		<about/>
 		<products/>
+		<application/>
 		<contact/>
 	</section>
 </template>

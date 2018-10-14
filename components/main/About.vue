@@ -8,7 +8,7 @@
 			<p class="mb-4">Jmax metals trading was founded in March 2001.
 				It is located in one of the biggest industrial Cluster Area, which is in the Guangdong County.
 				Our company covers an area of 900mu and makes a total investment of RMB 5.1 billion. 
-				We privide all kind of metal materials, such as, aluminum alloy plate, strip, and foil.</p>
+				We privide all kind of metal materials, such as, aluminum alloy plate, coil, and foil.</p>
 			<p>The annual output reaches 108,500 tons, increasing by 31.7% compared with the inventory quantity in 2015.
 				The total shipment is 8,400 tons, increasing by 33.8% compared with that of 2015.</p>
 		</div>
