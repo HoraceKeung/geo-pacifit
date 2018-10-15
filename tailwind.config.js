@@ -55,10 +55,15 @@ let colors = {
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'gold': '#d6a853',
+  'gold-lightest' : '#FBF6EE',
+  'gold-lighter' : '#EFDCBA',
+  'gold-light' : '#E2C287',
   'gold-50': '#d6a85380',
   'gold-70': '#d6a853b3',
-  'gold-light': '#d8b372'
+  'gold' : '#D6A853',
+  'gold-dark' : '#C1974B',
+  'gold-darker' : '#806532',
+  'gold-darkest' : '#403219'  
 }
 
 module.exports = {

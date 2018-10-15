@@ -25,11 +25,11 @@
 			</div>
 		</div></div>
 		<!-- START Modal -->
-		<modal name="table" width="90%" height="auto">
-			<div class="bg-gold p-2"><h2 class="text-white">Specificaton</h2></div>
+		<modal name="table" width="860px" height="auto" adaptive>
+			<div class="bg-gold p-2"><h2 class="text-white ml-4">Specificaton</h2></div>
 			<div v-if="reading" class="bg-white p-2 w-full">
 				<table class="w-full">
-					<thead class="bg-grey-light">
+					<thead class="bg-gold-lightest">
 						<tr>
 							<th v-for="h in reading.head" :key="h" class="border border-black text-center whitespace-no-wrap p-4">{{h}}</th>
 						</tr>
