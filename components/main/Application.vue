@@ -1,8 +1,10 @@
 <template>
 	<div id="application">
-		<quote/>
 		<div class="container text-center py-16">
-			<h2 class="text-gold mb-16">Application</h2>
+			<div class="flex py-10 px-4"><div class="text-center mx-auto max-w-sm">
+				<h2 class="text-gold mb-2">Application</h2>
+				<p class="italic font-bold">We widely supply to various industries such as transpotation, home appliance, decoration, telecommunication, etc.</p>
+			</div></div>
 			<div class="md:flex flex-wrap">
 				<div v-for="a in applications" :key="a.name" :id="a.name" class="md:w-1/2 lg:w-1/3">
 					<div class="overflow-hidden relative trigger">

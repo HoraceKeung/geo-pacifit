@@ -5,7 +5,7 @@
 				<div><img class="h-24" src="~assets/img/logo.png" alt="logo"></div>
 				<div class="ml-auto flex">
 					<p v-for="l in links" :key="l" class="capitalize my-auto mr-5 cursor-pointer" v-scroll-to="`#${l}`">{{l}}</p>
-					<button class="btn my-auto" v-scroll-to="'#contact'">Get a quote</button>
+					<button class="btn my-auto" v-scroll-to="'#contact'">Request a quote</button>
 				</div>
 			</div>
 		</div></div></div>

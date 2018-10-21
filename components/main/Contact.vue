@@ -26,7 +26,7 @@
 				<quote/>
 				<div class="flex"><div class="mx-auto">
 					<div class="min-h-64 bg-white shadow-lg lg:px-16 flex flex-wrap -mx-2">
-						<div v-for="(o,index) in offices" :key="o.img" :class="[{'pt-6 md:pt-0':index===0},'md:w-1/2 px-2 flex']">
+						<div v-for="(o,index) in offices" :key="o.img" :class="[{'pt-6 md:pt-0':index===0},'md:w-1/2 px-0 flex']">
 							<div class="flex m-auto px-4">
 								<div class="my-auto mx-4 md:ml-0"><img :src="`${baseImgUrl+o.img}.png`" :alt="o.img"></div>
 								<div>
@@ -40,13 +40,13 @@
 				</div></div>
 			</div>
 		</div>
-		<div class="pb-8" style="background-color: #01081a;"><div class="container text-center text-white">
+		<div class="pb-8" style="background-color: #020a1f;"><div class="container text-center text-white">
 			<div class="py-16">
-				<p>Jmax Metals Trading Ltd.</p>
+				<p>Geo Pacifit material trading Ltd.</p>
 				<p>34 Park Avenue, Staines, TW19 5ET</p>
 				<p>020 1512 3350</p>
 			</div>
-			<p>© copyright by Jmax Metals Trading Ltd. 2018</p>
+			<p>© copyright by Geo Pacifit material trading Ltd. 2018</p>
 		</div></div>
 	</div>
 </template>
@@ -90,8 +90,8 @@ export default {
 		message: null,
 		resMsg: null,
 		offices: [
-			{img: 'uk', address: '34 Park Avenue, TW19 5ET', phone: '020 5136 5135', email: 'UK@jmaxmetalstrading.com'},
-			{img: 'china', address: 'Guangdong', phone: '020 5136 5135', email: 'China@jmaxmetalstrading.com'}
+			{img: 'uk', address: 'Mappin House, 4 Winsley St, Fitzrovia, London W1W 8HF', phone: '+44 7521 530350'},
+			{img: 'china', address: 'No19 Wenxing Road, Beijiao, Shunde, Foshan, Guangdong', phone: ' 0086-379-64158108'}
 		]
 	})
 }
