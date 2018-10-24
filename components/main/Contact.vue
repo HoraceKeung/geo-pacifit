@@ -7,14 +7,13 @@
 					<p class="text-white">For the years, the company has won consistent acceptance of customers in the society by virtue of solid strength, good reputation, strict quality management and thoughtful after-sales service.</p>
 				</div>
 				<div class="md:w-1/2 px-4">
-					<form class="flex flex-wrap -mx-2">
+					<form class="flex flex-wrap -mx-2" method="POST" action="https://formspree.io/chenjiangquan123@gmail.com">
 						<div v-for="f in fields" :key="f.label" class="w-1/2 px-2">
 							<input v-model="f.value" class="form-control" :placeholder="f.label">
 						</div>
 						<div class="w-full px-2">
 							<textarea v-model="message" class="form-control" placeholder="Message" rows="4"/>
-							<button class="btn mt-4" type="submit" @click.prevent="getInTouch" :disabled="!formReady">Let's get in touch</button>
-							<p class="text-white mt-2">{{resMsg}}</p>
+							<button class="btn mt-4" type="submit" :disabled="!formReady">Let's get in touch</button>
 						</div>
 					</form>
 				</div>
@@ -66,20 +65,6 @@ export default {
 		},
 		formReady () { return Object.values(this.formBody).every(x => x) }
 	},
-	methods: {
-		getInTouch () {
-			fetch('https://formspree.io/chenjiangquan123@gmail.com', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(this.formBody)
-			}).then(r => {
-				this.resMsg = r.status >= 200 && r.status < 300 ? 'Thanks for dropping us a line' : 'Something went wrong'
-				setTimeout(() => { this.resMsg = null }, 5000)
-			})
-		}
-	},
 	data: () => ({
 		fields: [
 			{label: 'First name', value: null},
@@ -88,7 +73,6 @@ export default {
 			{label: 'Product needed', value: null}
 		],
 		message: null,
-		resMsg: null,
 		offices: [
 			{img: 'uk', address: 'Mappin House, 4 Winsley St, Fitzrovia, London W1W 8HF', phone: '+44 7521 530350'},
 			{img: 'china', address: 'No19 Wenxing Road, Beijiao, Shunde, Foshan, Guangdong', phone: ' 0086-379-64158108'}
