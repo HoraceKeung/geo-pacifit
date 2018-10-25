@@ -9,10 +9,10 @@
 				<div class="md:w-1/2 px-4">
 					<form class="flex flex-wrap -mx-2" method="POST" action="https://formspree.io/chenjiangquan123@gmail.com">
 						<div v-for="f in fields" :key="f.label" class="w-1/2 px-2">
-							<input v-model="f.value" class="form-control" :placeholder="f.label">
+							<input v-model="f.value" class="form-control" type="text" :name="f.label" :placeholder="f.label">
 						</div>
 						<div class="w-full px-2">
-							<textarea v-model="message" class="form-control" placeholder="Message" rows="4"/>
+							<textarea v-model="message" class="form-control" name="message" placeholder="Message" rows="4"/>
 							<button class="btn mt-4" type="submit" :disabled="!formReady">Let's get in touch</button>
 						</div>
 					</form>
