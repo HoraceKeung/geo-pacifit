@@ -7,13 +7,13 @@
 					<p class="text-white">For the years, the company has won consistent acceptance of customers in the society by virtue of solid strength, good reputation, strict quality management and thoughtful after-sales service.</p>
 				</div>
 				<div class="md:w-1/2 px-4">
-					<form class="flex flex-wrap -mx-2" method="POST" action="https://formspree.io/chenjiangquan123@gmail.com">
+					<form class="flex flex-wrap -mx-2">
 						<div v-for="f in fields" :key="f.label" class="w-1/2 px-2">
-							<input v-model="f.value" class="form-control" :placeholder="f.label">
+							<input v-model="f.value" :name="f.label" class="form-control" :placeholder="f.label">
 						</div>
 						<div class="w-full px-2">
-							<textarea v-model="message" class="form-control" placeholder="Message" rows="4"/>
-							<button class="btn mt-4" type="submit" :disabled="!formReady">Let's get in touch</button>
+							<textarea v-model="message" name="Message" class="form-control" placeholder="Message" rows="4"/>
+							<button class="btn mt-4" type="submit" @click.prevent="getInTouch">Let's get in touch</button>
 						</div>
 					</form>
 				</div>
@@ -64,6 +64,23 @@ export default {
 			return body
 		},
 		formReady () { return Object.values(this.formBody).every(x => x) }
+	},
+	methods: {
+		getInTouch () {
+			if (this.formReady) {
+				fetch('https://submit-form.com/7b319f0b-91db-4797-acc0-539a315765f8', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(this.formBody)
+				}).then(r => {
+					alert(r.status >= 200 && r.status < 300 ? 'Thanks for dropping us a line' : 'Something went wrong')
+				}).catch(err => {
+					alert('Thanks for dropping us a line')
+				})
+			} else { alert('Please fill in the form') }
+		}
 	},
 	data: () => ({
 		fields: [
