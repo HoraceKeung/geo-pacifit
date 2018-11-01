@@ -2,10 +2,10 @@
 	<div id="about">
 		<div class="container text-center py-16 md:px-16 lg:px-32 xl:px-48">
 			<h2 class="text-gold mb-4">About Us</h2>
-			<p class="mb-4">Geo Pacifit Materials Trading (Geo Pacifit China) is one of the largest metal material supplier in China, supplying tons of metal material to the world.
-				Our UK office (Geo Pacifit UK) have been established since 2016 and servicing all around the Europe.</p>
+			<p class="mb-4">Golden Pacific Global is one of the largest metal material supplier in China, supplying tons of metal material to the world.
+				Our UK office  have been established since 2016 and servicing all around the Europe.</p>
 			<img class="mb-8 w-full" src="~assets/img/about.jpg" alt="about">
-			<p class="mb-4">Geo Pacifit was founded in March 2001.
+			<p class="mb-4">Golden Pacific Global was founded in March 2001.
 				It is located in one of the biggest industrial Cluster Area, which is in the Guangdong County.
 				Our company covers an area of 900mu and makes a total investment of RMB 4.1 billion.
 				We privide all kind of metal materials, such as, aluminum alloy plate, aluminum coil, aluminum foil, Galvanized sheet, etc ...</p>
@@ -14,9 +14,9 @@
 		</div>
 		<div class="bg-goldblock">
 			<div class="container">
-				<h2 class="text-center mb-16">Why Us?</h2>
+				<h2 class="text-center mb-16">Why Golden Pacific Global?</h2>
 				<div class="flex flex-wrap -mx-2">
-					<div v-for="p in pros" :key="p" class="w-full sm:w-1/2 md:w-1/4 px-2 text-center mb-6">
+					<div v-for="p in pros" :key="p" class="w-full sm:w-1/2 md:w-1/5 px-2 text-center mb-6">
 						<img :src="`${baseImgUrl+p}.png`" :alt="p">
 						<p class="capitalize">{{p.replace(/-/g,' ')}}</p>
 					</div>
@@ -29,7 +29,7 @@
 <script>
 export default {
 	data: () => ({
-		pros: ['best-quality', 'worldwide-shipping', 'reasonable-price', 'experience']
+		pros: ['best-quality', 'worldwide-shipping', 'reasonable-price', 'experience', 'on-time-delivery']
 	})
 }
 </script>

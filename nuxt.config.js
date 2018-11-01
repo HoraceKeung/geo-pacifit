@@ -12,11 +12,11 @@ class TailwindExtractor {
 module.exports = {
 	mode: 'spa',
 	head: {
-		title: 'Geo Pacifit',
+		title: 'Golden Pacific Global Ltd.',
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ hid: 'description', name: 'description', content: 'The most reliable metal supplier in the world' }
+			{ hid: 'Golden Pacific Global is one of the largest metal material supplier in China, supplying tons of metal material to the world. Our UK office have been established since 2016 and servicing all around the Europe.', name: 'description', content: 'The most reliable metal supplier in the world' }
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: (process.env.DEPLOY_ENV === 'GH_PAGES' ? '/geo-pacifit' : '') + '/favicon.ico'}

@@ -24,7 +24,7 @@
 			<div class="absolute w-full px-4" style="bottom: 4rem;">
 				<quote/>
 				<div class="flex"><div class="mx-auto">
-					<div class="min-h-64 bg-white shadow-lg lg:px-16 flex flex-wrap -mx-2">
+					<div class="min-h-64 bg-white shadow-lg lg:px-16 flex flex-wrap -mx-2 max-w-xl">
 						<div v-for="(o,index) in offices" :key="o.img" :class="[{'pt-6 md:pt-0':index===0},'md:w-1/2 px-0 flex']">
 							<div class="flex m-auto px-4">
 								<div class="my-auto mx-4 md:ml-0"><img :src="`${baseImgUrl+o.img}.png`" :alt="o.img"></div>
@@ -41,8 +41,8 @@
 		</div>
 		<div class="pb-8" style="background-color: #020a1f;"><div class="container text-center text-white">
 			<div class="py-16">
-				<p>Geo Pacifit material trading Ltd.</p>
-				<p>34 Park Avenue, Staines, TW19 5ET</p>
+				<p>Golden Pacific Global Ltd.</p>
+				<p>Mappin House, 4 Winsley St, Fitzrovia, London W1W 8HF</p>
 				<p>020 1512 3350</p>
 			</div>
 			<p>© copyright by Geo Pacifit material trading Ltd. 2018</p>
@@ -91,8 +91,8 @@ export default {
 		],
 		message: null,
 		offices: [
-			{img: 'uk', address: 'Mappin House, 4 Winsley St, Fitzrovia, London W1W 8HF', phone: '+44 7521 530350'},
-			{img: 'china', address: 'No19 Wenxing Road, Beijiao, Shunde, Foshan, Guangdong', phone: ' 0086-379-64158108'}
+			{img: 'uk', address: 'Address: Mappin House, 4 Winsley St, Fitzrovia, London W1W 8HF', phone: 'Phone: +44 7521 530350', email: 'Email: info@goldenpacificglobal.com'},
+			{img: 'china', address: 'Address: No19 Wenxing Road, Beijiao, Shunde, Foshan, Guangdong', phone: 'Phone: +86 28311975', email: 'Email: info@goldenpacificglobal.com'}
 		]
 	})
 }
